@@ -122,6 +122,107 @@
 <h4>
 <a id="laboratoire-05--utiliser-les-branches" class="anchor" href="#laboratoire-05--utiliser-les-branches" aria-hidden="true"><span class="octicon octicon-link"></span></a>Laboratoire 05 : Utiliser les branches</h4>
 
+<h5>
+<a id="pour-windows-" class="anchor" href="#pour-windows-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Pour Windows :</h5>
+
+<p>Visualiser les branches disponibles pour le répertoire git</p>
+
+<ul>
+<li>Sur la page GitHub le bouton branch :</li>
+<li>Sur l’application GitHub quand un répertoire est sélectionné le bouton texte en haut de l’historique.</li>
+<li>Avec Git clic droit sur le répertoire et option branch</li>
+<li>Sur Git Gui dans branch et Checkout</li>
+</ul>
+
+<p>Créer une nouvelle branche et l’envoyer à GitHub</p>
+
+<ul>
+<li>Sur GitHub directement et synchroniser les informations (bouton sync)</li>
+<li>Sur l’application Git sur le bouton text branch et faire publish</li>
+<li>Avec Git Gui Branch Create et remplir les champs nécessaire, puis faire un push (façon plus optimale)
+Visualiser de nouveau vos branches</li>
+</ul>
+
+<p>Changer de branche  (Checkout)</p>
+
+<ul>
+<li>Par l’interface GitHub en haut de la page</li>
+<li>En cliquant droit avec  Git et choisissant la branche sur le répertoire</li>
+</ul>
+
+<p>Modifier localement votre branche et sauvegarder les changements</p>
+
+<ul>
+<li>Supprimer un fichier d’une des branches<br>
+</li>
+<li>Faire un push comme appris dans le Lab03</li>
+</ul>
+
+<p>Si un update est nécessaire sur une branche</p>
+
+<ul>
+<li>On peut synchroniser avec l’Application client</li>
+<li>Git Gui cliquer sur remote puis fetch from et finalement origin.</li>
+</ul>
+
+<p>Supprimer une branche en local</p>
+
+<ul>
+<li>A partir de Git Gui dans branch delete selectionner la branche et cliquez sur delete</li>
+<li>Sur l’application client de GitHub cliquer sur les branches et cliquez sur manage, puis cliquer sur la poubelle sur la branche que vous désirez supprimer.</li>
+</ul>
+
+<p>Supprimer une branche sur gitHub</p>
+
+<ul>
+<li>Si vous avez utilisé Git Gui il suffit de faire un nouveau push.</li>
+<li>Si vous avez utilisé GitHub il suffit de faire Sync</li>
+<li>Si vous n’avez encore rien faire vous pouvez utiliser l’interface web pour supprimer la branche sur GitHub directement. Dans le répertoire branches puis all branches.</li>
+</ul>
+
+<h5>
+<a id="pour-ubuntu" class="anchor" href="#pour-ubuntu" aria-hidden="true"><span class="octicon octicon-link"></span></a>Pour Ubuntu</h5>
+
+<p>Visualiser les branches disponibles pour le projet</p>
+
+<ul>
+<li>git branch</li>
+<li>Vous ne devriez voir qu’une seule branche
+Créer une nouvelle branche et l’envoyer à GitHub</li>
+<li>git checkout –b nomdevotrenouvellebranche</li>
+<li>git push origin nomdevotrenouvellebranche</li>
+</ul>
+
+<p>Visualiser de nouveau les branches disponibles</p>
+
+<ul>
+<li>git branch</li>
+<li>une seconde branche devrait être disponible</li>
+</ul>
+
+<p>PUSH les changements de vos commits dans votre branche
+*git push origin nomdevotrebranche</p>
+
+<ul>
+<li>Mettre à jours votre branche à partir du dépôt Github</li>
+<li>Modifier à partir de l’interface web la nouvelle branche sélectionner votre nouvelle branche et supprimer le fichier créer précédemment. (cliquer dessus puis cliquer sur le symbole de poubelle)</li>
+<li>git fetch </li>
+<li>git merge origin/nomvotrebranche</li>
+</ul>
+
+<p>Changer de branche</p>
+
+<ul>
+<li>git checkout master</li>
+</ul>
+
+<p>Supprimer une branche</p>
+
+<ul>
+<li>En local: git branch –D nomdevotrebranche</li>
+<li>Sur GitHub: git push origin :nomdevotrebranche</li>
+</ul>
+
 <hr>
 
 <h4>
