@@ -1,34 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
-
+    <meta charset="UTF-8">
     <title>Seminaire Git Hub by CAL-420-650-SEMINAIRES</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
-
   <body>
+    <section class="page-header">
+      <h1 class="project-name">Seminaire Git Hub</h1>
+      <h2 class="project-tagline">Seminaire sur Git Hub et Git </h2>
+      <a href="https://github.com/CAL-420-650-SEMINAIRES/GitHub_Seminaire-Michel-" class="btn">View on GitHub</a>
+      <a href="https://github.com/CAL-420-650-SEMINAIRES/GitHub_Seminaire-Michel-/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/CAL-420-650-SEMINAIRES/GitHub_Seminaire-Michel-/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
 
-    <header>
-      <div class="container">
-        <h1>Seminaire Git Hub</h1>
-        <h2>Seminaire sur Git Hub et Git </h2>
-
-        <section id="downloads">
-          <a href="https://github.com/CAL-420-650-SEMINAIRES/GitHub_Seminaire-Michel-/zipball/master" class="btn">Download as .zip</a>
-          <a href="https://github.com/CAL-420-650-SEMINAIRES/GitHub_Seminaire-Michel-/tarball/master" class="btn">Download as .tar.gz</a>
-          <a href="https://github.com/CAL-420-650-SEMINAIRES/GitHub_Seminaire-Michel-" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
-        </section>
-      </div>
-    </header>
-
-    <div class="container">
-      <section id="main_content">
-        <h3>
+    <section class="main-content">
+      <h3>
 <a id="avant-propos" class="anchor" href="#avant-propos" aria-hidden="true"><span class="octicon octicon-link"></span></a>Avant-propos</h3>
 
 <h3>
@@ -117,6 +108,85 @@
 <h4>
 <a id="laboratoire-04--prise-en-main-du-répertoire" class="anchor" href="#laboratoire-04--prise-en-main-du-r%C3%A9pertoire" aria-hidden="true"><span class="octicon octicon-link"></span></a>Laboratoire 04 : Prise en main du répertoire</h4>
 
+<h5>
+<a id="pour-windows-avec-application-git-hub-" class="anchor" href="#pour-windows-avec-application-git-hub-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Pour Windows avec application Git Hub :</h5>
+
+<p>Créer un répertoire à partir de fichiers courants</p>
+
+<ul>
+<li>Cliquer sur +</li>
+<li>Choisissez Create entrez un nom et choisissez le répertoire dans votre arborescence</li>
+<li>Pour l’envoyer sur GitHub cliquer sur Publish Repository en haut à droite
+Pour créer ou modifier un fichier et le PUSH a votre projet GitHub</li>
+<li>Allez dans le repertoire cloner dans votre arborescence</li>
+<li>Créez un fichier example : new_or_existing_file.extention</li>
+<li>Cliquer droit sur le répertoire et sélectioner l’option git Gui</li>
+<li>Vous verrez une liste des modifications de votre répertoire</li>
+<li>Cliquer sur State Change pour accepter les changements</li>
+<li>Écriver un message de Commit example username : La modification</li>
+<li>A partir d’ici 2 solution sont possible simplement cliquer sur Push et entrez les informations du compte GitHub ou aller sur l’interface GitHub client et cliquer sur Sync en haut à droite.</li>
+</ul>
+
+<p>Pour synchroniser les informations de la BRANCH  et PULLER tous les nouveau changements </p>
+
+<ul>
+<li>Aller sur github.com et cliquer sur le nouveau fichier ajouter puis sur le symbole de crayon afin d’éditer le fichier à partir de l’interface web.</li>
+<li>Rajouter du texte et en bas de page ajouter un message de commit et optionnellement une description</li>
+<li>Choisissez commit directly sur master branch et cliquer sur le bouton vert Commits changes</li>
+<li>Retourner sur le client de GitHub, vous verrez un symbole apparaitre sur le bouton sync, cliquer dessus.
+Voir tous les changements de la version locale</li>
+<li>cliquer droit et choisissez git gui tous les changements non enregistré apparaitront dans la partie du haut
+Voir toutes les activités sur repertoire GitHub</li>
+<li>Accéder à votre Compte GitHub et cliquer sur le nom de votre répertoire</li>
+<li>Cliquer sur le mot commits en haut de la page il vous permettra de sélectionner les commits et de voir toutes les modifications apportés lors de ceux-ci.</li>
+</ul>
+
+<h5>
+<a id="pour-ubuntu-avec-git-" class="anchor" href="#pour-ubuntu-avec-git-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Pour Ubuntu avec Git :</h5>
+
+<ul>
+<li>Note : Pour transformer un répertoire existant en répertoire git il suffit de faire git init une fois à l’intérieur du répertoire
+Pour créer ou modifier un fichier et le PUSH a votre projet GitHub</li>
+<li>Entrez dans le répertoire git cd nomdurépertoire (TRÈS IMPORTANT!!!)</li>
+<li>Créer un fichier : <code>touch new_or_existing_file.extention (remplacer extention par l’Extention que vous voulez)</code>
+</li>
+</ul>
+
+<pre><code>git add new_or_existing_file.extention 
+git commit
+git push origin master
+</code></pre>
+
+<p>Pour synchroniser les informations de la BRANCH  et PULLER tous les nouveau changements </p>
+
+<ul>
+<li>Aller sur github.com et cliquer sur le nouveau fichier ajouter puis sur le symbole de crayon afin d’éditer le fichier à partir de l’interface web.</li>
+<li>Rajouter du texte et en bas de page ajouter un message de commit et optionnellement une description</li>
+<li>Choisisez commit directly sur master branch et cliquer sur le bouton vert Commits changes</li>
+</ul>
+
+<pre><code>git fetch
+git merge origin/master
+</code></pre>
+
+<ul>
+<li>Visualiser toutes les requetes FETCH et PULL à distance que vous avez demandé
+<code>git remote –v</code>
+</li>
+<li>Voir les changements récents
+<code>git status</code>
+</li>
+<li>Visualiser tous les changements sur votre FORK
+<code>git log</code>
+</li>
+<li>Une liste détaillée de tous les changements qui ont été commits sur votre FORK
+<code>git log –stat</code>
+</li>
+<li>Une liste des changements avec couleurs
+<code>git log --graph --full-history --all --color --pretty=format:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s"</code>
+</li>
+</ul>
+
 <hr>
 
 <h4>
@@ -189,9 +259,10 @@ Visualiser de nouveau vos branches</li>
 </code></pre>
 
 <ul>
-<li>Vous ne devriez voir qu’une seule branche
-Créer une nouvelle branche et l’envoyer à GitHub</li>
+<li>Vous ne devriez voir qu’une seule branche</li>
 </ul>
+
+<p>Créer une nouvelle branche et l’envoyer à GitHub</p>
 
 <pre><code>git checkout –b nomdevotrenouvellebranche
 git push origin nomdevotrenouvellebranche
@@ -284,9 +355,16 @@ $ git push origin :nomdevotrebranche
 
 <h3>
 <a id="conclusion" class="anchor" href="#conclusion" aria-hidden="true"><span class="octicon octicon-link"></span></a>Conclusion</h3>
-      </section>
-    </div>
 
-    
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/CAL-420-650-SEMINAIRES/GitHub_Seminaire-Michel-">Seminaire Git Hub</a> is maintained by <a href="https://github.com/CAL-420-650-SEMINAIRES">CAL-420-650-SEMINAIRES</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
   </body>
 </html>
+
