@@ -75,8 +75,6 @@
 <h4>
 <a id="laboratoire-01--inscription-à-git-hub" class="anchor" href="#laboratoire-01--inscription-%C3%A0-git-hub" aria-hidden="true"><span class="octicon octicon-link"></span></a>Laboratoire 01 : Inscription à Git Hub</h4>
 
-<p>A la fin de ce laboratoire vous serez propriétaire d’un compte GitHub.</p>
-
 <ul>
 <li>Rendez- vous sur le site <a href="https://github.com/">https://github.com/</a>
 </li>
@@ -98,10 +96,77 @@
 <h4>
 <a id="laboratoire-02--installation-dudes-logiciels" class="anchor" href="#laboratoire-02--installation-dudes-logiciels" aria-hidden="true"><span class="octicon octicon-link"></span></a>Laboratoire 02 : Installation du/des logiciels</h4>
 
+<h5>
+<a id="pour-windows-installer-lapplication-github" class="anchor" href="#pour-windows-installer-lapplication-github" aria-hidden="true"><span class="octicon octicon-link"></span></a>Pour Windows Installer l’application GitHub</h5>
+
+<ul>
+<li>Accéder à la page <a href="https://windows.github.com/">https://windows.github.com/</a>
+</li>
+<li>Cliquer sur Download GitHub</li>
+<li>Éxécuter GitHubSetup.exe</li>
+<li>Si un pop-up apparait cliquez sur Run et Install</li>
+<li>Une fois l’installation terminée l’application ouvrira d’elle-même</li>
+<li>Dans log in entrez les informations de votre compte et appliquer</li>
+<li>Cliquez sur continue pour enregistrer les informations de configurations </li>
+<li>Accéder à la page <a href="http://git-scm.com/">http://git-scm.com/</a>
+</li>
+<li>Cliquez sur download</li>
+<li>Exécuter le setup</li>
+<li>Cliquez sur next  jusqu’à la fin.</li>
+</ul>
+
+<h5>
+<a id="pour-ubuntu-installer-git" class="anchor" href="#pour-ubuntu-installer-git" aria-hidden="true"><span class="octicon octicon-link"></span></a>Pour Ubuntu installer Git</h5>
+
+<ul>
+<li>Allez dans votre terminal Ubuntu (Chercher Terminal ou faites ctrl+alt+t)</li>
+<li>Entrez la ligne suivante : sudo apt-get install git</li>
+<li>Lorsqu’il vous le sera demandé entrez votre mot de passe et y lors de la question oui ou non</li>
+<li>Il faut maintenant connecter le répertoire GitHub  à notre ordinateur
+<code>git clone https://github.com/username/repertoire.git</code>
+</li>
+<li>Il est possible de sauvegarder les informations du user et du email pour les prochaines opérations</li>
+<li>Le username : <code>$ git config --global user.name "Votre Username"</code>
+</li>
+<li>Le email: <code>$ git config --global user.email "votre@email.com"</code>
+</li>
+</ul>
+
+<p>Vous avez maintenant accès à votre répertoire et vos informations seront sauvegarder quand vous ferez des opérations sur le répertoire github.</p>
+
 <hr>
 
 <h4>
 <a id="laboratoire-03--mise-en-place-du-premier-répertoire" class="anchor" href="#laboratoire-03--mise-en-place-du-premier-r%C3%A9pertoire" aria-hidden="true"><span class="octicon octicon-link"></span></a>Laboratoire 03 : Mise en place du premier répertoire</h4>
+
+<p>Mettre en place son premier répertoire (sur github)</p>
+
+<ul>
+<li>Cliquez sur votre nom en haut de la page.</li>
+<li>Une fois votre profil, choisissez l’onglet repositories</li>
+<li>Puis cliquez sur le bouton Vert New</li>
+<li>Dans le champ repository name entrez le nom que vous désirez donner à votre répertoire</li>
+<li>Dans le champ Description vous pouvez entrer une description de ce que va contenir ce répertoire. (optionnel)</li>
+<li>Vous devez ensuite choisir une visibilité entre public et privé nous prendront dans ce laboratoire la visibilité publique.</li>
+<li>Ensuite sélectionnez Add a License et choisissez l’option MIT License</li>
+<li>Cocher l’option Initialize this repository with a README</li>
+<li>Cliquez enfin sur le bouton vert Create Repository</li>
+</ul>
+
+<p>Sécuriser le répertoire</p>
+
+<ul>
+<li>Cliquer sur l’option Settings à droite du répertoire.</li>
+<li>Cocher l’option Restrict editing to collaborators only</li>
+<li>Cela empêchera les autres utilisateurs de GitHub d’éditer le répertoire sans que vous ne les nommiez Collaborateur.</li>
+</ul>
+
+<p>Récupérer le répertoire en local</p>
+
+<ul>
+<li>Cliquez sur le + en haut à gauche </li>
+<li>Choisissez clone sélectionnez votre compte et le répertoire que vous voulez importer</li>
+</ul>
 
 <hr>
 
@@ -116,8 +181,12 @@
 <ul>
 <li>Cliquer sur +</li>
 <li>Choisissez Create entrez un nom et choisissez le répertoire dans votre arborescence</li>
-<li>Pour l’envoyer sur GitHub cliquer sur Publish Repository en haut à droite
-Pour créer ou modifier un fichier et le PUSH a votre projet GitHub</li>
+<li>Pour l’envoyer sur GitHub cliquer sur Publish Repository en haut à droite</li>
+</ul>
+
+<p>Pour créer ou modifier un fichier et le PUSH a votre projet GitHub</p>
+
+<ul>
 <li>Allez dans le repertoire cloner dans votre arborescence</li>
 <li>Créez un fichier example : new_or_existing_file.extention</li>
 <li>Cliquer droit sur le répertoire et sélectioner l’option git Gui</li>
@@ -133,11 +202,15 @@ Pour créer ou modifier un fichier et le PUSH a votre projet GitHub</li>
 <li>Aller sur github.com et cliquer sur le nouveau fichier ajouter puis sur le symbole de crayon afin d’éditer le fichier à partir de l’interface web.</li>
 <li>Rajouter du texte et en bas de page ajouter un message de commit et optionnellement une description</li>
 <li>Choisissez commit directly sur master branch et cliquer sur le bouton vert Commits changes</li>
-<li>Retourner sur le client de GitHub, vous verrez un symbole apparaitre sur le bouton sync, cliquer dessus.
-Voir tous les changements de la version locale</li>
-<li>cliquer droit et choisissez git gui tous les changements non enregistré apparaitront dans la partie du haut
-Voir toutes les activités sur repertoire GitHub</li>
-<li>Accéder à votre Compte GitHub et cliquer sur le nom de votre répertoire</li>
+<li>Retourner sur le client de GitHub, vous verrez un symbole apparaitre sur le bouton sync, cliquer dessus.</li>
+</ul>
+
+<p>Voir tous les changements de la version locale</p>
+
+<ul>
+<li><p>cliquer droit et choisissez git gui tous les changements non enregistré apparaitront dans la partie du haut
+Voir toutes les activités sur repertoire GitHub</p></li>
+<li><p>Accéder à votre Compte GitHub et cliquer sur le nom de votre répertoire</p></li>
 <li>Cliquer sur le mot commits en haut de la page il vous permettra de sélectionner les commits et de voir toutes les modifications apportés lors de ceux-ci.</li>
 </ul>
 
@@ -148,7 +221,7 @@ Voir toutes les activités sur repertoire GitHub</li>
 <li>Note : Pour transformer un répertoire existant en répertoire git il suffit de faire git init une fois à l’intérieur du répertoire
 Pour créer ou modifier un fichier et le PUSH a votre projet GitHub</li>
 <li>Entrez dans le répertoire git cd nomdurépertoire (TRÈS IMPORTANT!!!)</li>
-<li>Créer un fichier : <code>touch new_or_existing_file.extention (remplacer extention par l’Extention que vous voulez)</code>
+<li>Créer un fichier : <code>touch new_or_existing_file.extention</code>
 </li>
 </ul>
 
